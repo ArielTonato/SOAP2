@@ -33,7 +33,7 @@ namespace uta.fisei.credito.fachada
         }
         public void Dispose()
         {
-            throw new NotImplementedException();
+            GC.SuppressFinalize(this);
         }
     }
 }
